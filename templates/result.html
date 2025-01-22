@@ -5,10 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Résultat de la prédiction</title>
     <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(16, 95, 155, 0.3); /* Bleu ciel avec opacité */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #105f9b; /* Bleu ciel */
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        p.error {
+            color: red;
+            font-weight: bold;
+        }
+
+        a {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 15px;
+            background-color: #2ebb22; /* Vert */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #24991d; /* Vert légèrement plus foncé */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Résultat de la prédiction</h1>
+        <h1> Résultat de la prédiction 🚀</h1>
         {% if price %}
             <p>Le prix prédit est : <strong>{{ price|round(2) }}€</strong></p>
         {% elif error %}
