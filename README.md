@@ -1,73 +1,49 @@
-Prédiction de prix pour la famille AXES
+# 🛠️ Application Flask - Prédiction de Prix AXE
 
-Cette application Flask permet de prédire le prix d'un produit basé sur ses caractéristiques techniques. L'utilisateur peut soumettre des données via une interface web simple, et le modèle de machine learning fournit une estimation du prix.
+## 📖 Description
+Cette application vous permet de prédire le **prix des articles de la famille AXE**. Entrez les caractéristiques principales (MASSE, DIAM, etc.) et obtenez une estimation instantanée.
 
-Fonctionnalités
+---
 
-Formulaire interactif pour entrer les caractéristiques du produit.
+## 🚀 Comment Utiliser
 
-Prédiction basée sur un modèle pré-entraîné.
+### 1. Télécharger le Projet
+Téléchargez ou clonez ce dépôt GitHub :
+```bash
+git clone https://github.com/Gregstack/app_axe_2025.git
+cd app_axe_2025
 
-Interface utilisateur avec des templates HTML et CSS.
+### 2. Installer les Prérequis
+Assurez-vous d'avoir Python installé sur votre ordinateur. Ensuite :
 
-Prérequis
+pip install -r requirements.txt
 
-Python 3.8 ou supérieur.
-
-Les bibliothèques suivantes doivent être installées :
-
-pip install flask pandas numpy scikit-learn joblib
-
-Structure du projet
-
-project/
-|-- app.py                # Script principal de l'application Flask
-|-- trained_model.pkl     # Modèle de machine learning pré-entraîné
-|-- label_encoder.pkl     # Encodeur pour les labels
-|-- templates/
-|   |-- index.html        # Formulaire principal
-|   |-- result.html       # Page des résultats
-|-- static/
-|   |-- styles.css        # Fichier de style CSS
-|-- README.md             # Documentation du projet
-
-Exécution
-
-Clonez ce dépôt :
-
-git clone <URL_DU_DEPOT>
-
-Placez les fichiers trained_model.pkl et label_encoder.pkl dans le répertoire racine.
-
-Lancez l'application :
+### 3. Lancer l'Application
+Démarrez l'application avec cette commande :
 
 python app.py
 
-Accédez à l'application via http://127.0.0.1:5000.
+L'interface sera disponible dans votre navigateur à l'adresse suivante :
 
-Personnalisation
+http://127.0.0.1:5000/
 
-Vous pouvez modifier les styles CSS dans le fichier static/styles.css.
+## 🏗️ Fonctionnement
 
-Les templates HTML sont situés dans le dossier templates/.
+Saisissez les caractéristiques de l'article (MASSE, DIAM, etc.) dans le formulaire.
+Sélectionnez la matière (Acier, inox, etc.).
+Cliquez sur "Prédire le prix".
+Le prix prédit sera affiché instantanément.
 
-Dépendances
+## 🌟 Technologies
 
-Flask
+Python avec Flask
+HTML/CSS pour l'interface utilisateur
+Modèle d'apprentissage automatique pré-entraîné
 
-pandas
+## 🎉 Profitez de l'application et simplifiez vos prédictions !
 
-numpy
 
-scikit-learn
 
-joblib
 
-Contributeurs
 
-Créé par Grégory et ChatGPT.
-
-Licence
-
-Libre d'utilisation dans un cadre éducatif et non commercial.
 
