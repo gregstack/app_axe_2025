@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de la prédiction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Résultat de la prédiction</h1>
+        {% if price %}
+            <p>Le prix prédit est : <strong>{{ price|round(2) }}€</strong></p>
+        {% elif error %}
+            <p class="error">Erreur : {{ error }}</p>
+        {% endif %}
+        <a href="/">Faire une autre prédiction</a>
+    </div>
+</body>
+</html>

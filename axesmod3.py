@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import joblib
 
 # Chemin du fichier
-file_path = '/Users/greg/Workspace/ML toles/axxe1.csv'
+file_path = '/Users/greg/Workspace/prix_axe copie/synthetic_data_r2_0_75.csv'
 
 # Vérifier si le fichier existe dans le répertoire courant
 if not os.path.isfile(file_path):
@@ -22,7 +22,7 @@ else:
     data = pd.read_csv(file_path)
 
     # Définir les colonnes à convertir en numérique
-    cols_to_convert = ['MASSE', 'NBOP', 'DIAM', 'EAU', 'AGEOP','PRIX']
+    cols_to_convert = ['MASSE', 'NBOP', 'DIAM', 'EAU','PRIX']
 
     # Convertir uniquement les colonnes spécifiées en numérique avec 'coerce'
     data[cols_to_convert] = data[cols_to_convert].apply(pd.to_numeric, errors='coerce')
@@ -45,7 +45,7 @@ else:
     data_cleaned = data[~((data[cols_to_convert] < (Q1 - 1.5 * IQR)) | (data[cols_to_convert] > (Q3 + 1.5 * IQR))).any(axis=1)]
     
     # Séparation des variables X et Y 
-    X = data_cleaned[['MASSE','NBOP', 'DIAM','EAU','AGEOP','MAT']]  # Colonnes B à G et MAT encodée
+    X = data_cleaned[['MASSE','NBOP', 'DIAM','EAU','MAT']]  # Colonnes B à G et MAT encodée
     Y = data_cleaned['PRIX']  # Colonne H
 
     # Division des données en ensembles d'entraînement et de test
@@ -66,7 +66,7 @@ else:
     print(f"Coefficient de détermination R^2 : {r2}")
     
     # Création de la heatmap pour visualiser la corrélation entre les variables sélectionnées
-    selected_columns = ['MASSE','NBOP', 'DIAM', 'EAU','AGEOP','MAT', 'PRIX']
+    selected_columns = ['MASSE','NBOP', 'DIAM', 'EAU','MAT', 'PRIX']
     corr_matrix = data_cleaned[selected_columns].corr()
 
     plt.figure(figsize=(10, 8))
