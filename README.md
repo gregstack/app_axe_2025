@@ -1,11 +1,11 @@
-# 🛠️ Application Flask - Prédiction de Prix AXE
+# 🛠️ Application Flask - Prédire le prix unitaire d'un axe en cours de conception !
 
 ## 📖 Description
-Cette application vous permet de prédire le **prix des articles de la famille AXE**. Entrez les caractéristiques principales (MASSE, DIAM, etc.) et obtenez une estimation instantanée.
+Cette application vous permet de prédire le **prix d'un axe **. Entrez les caractéristiques principales (MASSE, DIAM, etc.) et obtenez une estimation instantanée.
 
 ---
 
-## 🚀 Comment Utiliser
+## 🚀 Comment Utiliser cette application ?
 
 ### 1. Télécharger le Projet
 Téléchargez ou clonez ce dépôt GitHub :
@@ -14,7 +14,8 @@ git clone https://github.com/m1nd0x91/app_axe_2025.git
 cd app_axe_2025
 
 ### 2. Installer les Prérequis
-Assurez-vous d'avoir Python installé sur votre ordinateur. Ensuite :
+Assurez-vous d'avoir Python installé sur votre ordinateur.
+Ensuite :
 
 pip install -r requirements.txt
 
@@ -38,7 +39,7 @@ Le prix prédit sera affiché instantanément.
 
 Python avec Flask
 HTML/CSS pour l'interface utilisateur
-Modèle d'apprentissage automatique pré-entraîné
+Modèle d'apprentissage automatique pré-entraîné (règression linéaire)
 
 ## 🎉 Profitez de l'application et simplifiez vos prédictions !
 
