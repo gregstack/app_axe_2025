@@ -8,9 +8,7 @@ Cette application vous permet de prédire le **prix d'un axe **. Entrez les cara
 ## 🚀 Comment Utiliser cette application ?
 
 ### 1. Télécharger le Projet
-Téléchargez ou clonez ce dépôt GitHub :
-```bash
-git clone https://github.com/m1nd0x91/app_axe_2025.git
+Téléchargez ou clonez ce dépôt GitHub : git clone https://github.com/m1nd0x91/app_axe_2025.git
 cd app_axe_2025
 
 ### 2. Installer les Prérequis
