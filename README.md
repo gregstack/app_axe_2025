@@ -1,7 +1,7 @@
 # 🛠️ Application Flask - Prédire le prix unitaire d'un axe en cours de conception 🚀
 
 ## 📖 Description
-Cette application vous permet de prédire le **prix d'un axe**. Entrez les caractéristiques principales (MASSE, DIAM, etc.) et obtenez une estimation instantanée.
+Cette application vous permet de prédire le **prix d'un axe**. Entrez les caractéristiques principales (MASSE, DIAMETRE, etc.) et obtenez une estimation instantanée.
 
 ---
 
@@ -40,8 +40,6 @@ Python avec Flask
 HTML/CSS pour l'interface utilisateur
 
 Modèle d'apprentissage automatique pré-entraîné (règression linéaire)
-
-## 🎉 Profitez de l'application et simplifiez vos prédictions !
 
 
 
